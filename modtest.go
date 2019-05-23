@@ -1,7 +1,7 @@
 package modtest
 
 const (
-	version = "v1.0.0"
+	version = "v1.1.1"
 )
 
 func It() string {

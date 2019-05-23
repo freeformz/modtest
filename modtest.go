@@ -1,13 +1,14 @@
 package modtest
 
 const (
-	version = "v1.1.1"
+	version = "v2.0.0"
 )
 
-func It() string {
-	return "modtest " + version
+func It() (string, string) {
+	return "modtest", version
 }
 
-func ItNow() string {
-	return "now " + It()
+func ItNow() (string, string) {
+	m, v := It()
+	return "now " + m, v
 }

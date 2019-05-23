@@ -7,3 +7,7 @@ const (
 func It() string {
 	return "modtest " + version
 }
+
+func ItNow() string {
+	return "now " + It()
+}
